@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* header */
+header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content:space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.450) ;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.650);
+}
+header .logo-header {
+    flex-grow: 1;
+    padding: 25px;
+}
+header nav {
+    flex-grow: 4;
+    display: flex;
+    justify-content: start;
+    height: 50px;
+    align-items: center;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0 10px 0 10px;
+    color: rgb(255, 255, 255);
+
+}
+header.sticky {
+    background: rgb(111, 221, 20);
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.650);
+    color:  rgb(30, 61, 4);
+}
+header.sticky nav ul li a{
+    color:rgb(30, 61, 4);
+}
+header nav ul li a:hover {
+    color: white;
+}
+header .keranjang {
+    flex-grow: 1;
+    text-align: end;
+    padding: 25px;
+}
+main div .beranda {
+    background-image: url("aset/picture/kurio-img.kurioapps.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    color: rgb(214, 214, 214);
+}
+main div .beranda h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.650);
+    box-shadow: 0px 0px 100px 100px rgba(0, 0, 0, 0.626);
+}
+main div .beranda a{
+    z-index: 2;
+    width :100px;
+    height: 100px;
+    position:absolute;
+    bottom:  3%;
+    left: 44.5%;
+}
+main div .beranda span {
+    position: absolute;
+    top: 80%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+#arrow_down{
+    width: 50px;
+    height: 50px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    animation: updownani 2s infinite;
+    animation-direction :inherit;
+
+}
+@keyframes updownani{
+    0% {bottom: 84%;}
+    100% {top: 85%;}
+}
+  
+/* abaout */
+.about {
+    background-image:url("aset/picture/mejakayuu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 10%;
+    height: 100vmin;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-bottom : solid rgb(111, 221, 20);
+    border-top: solid rgb(111, 221, 20);
+}
+.about-container {
+    display: flex;
+    height: 50vh;
+    width: 89%;
+    padding-left: 10%;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+.about-container img {
+    height: auto;
+    width: auto;
+    filter: drop-shadow( 6px 31px 9px #000000a0);
+}
+.about div #aboutText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.about .textKiri {
+    padding:  20px;
+    text-align: left;
+    display: flex;
+}
+.about .textKiri p {
+    flex-basis: 70%;
+}
+.about .textKanan {
+    padding:  20px;
+    text-align: right;
+    display: flex;
+    flex-flow: row-reverse;
+}
+.about .textKanan p {
+    flex-basis: 70%;
+}
+
+/* produk */
+.produk {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1%;
+}
+.produk div {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.produk div h1 {
+    text-align: center;
+    padding: 20px;
+}
+.produk div div.produkList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.produk div div.produkList .cproduk {
+    height: 250px;
+    align-items: center;
+}
+.produk div div.produkList .cproduk img{
+    max-height: 140px;
+    max-width: 140px;
+    padding: 20px;
+    box-shadow : 10px 10px 10px 5px rgba(0, 0, 0, 0.626);
+    border-radius: 10px;
+}
+
+/* kerjasaam */
+.kerjasama {
+    background-color: rgb(111, 221, 20);
+    text-align: center;
+    padding: 50px;
+}
+.kerjasama div span {
+    border: 2px solid white;
+    border-radius: 22px;
+    margin: 5px 20px 5px 20px;
+    padding: 10px;
+    background-color: rgb(79, 175, 0);
+}
+.kerjasama div span a{
+    color:white;
+    text-decoration: none;
+}
+
+/* review */
+.review {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.review h1 {
+    padding: 20px;
+}
+.review .reviewContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+    justify-content: space-evenly ;
+}
+.review .reviewContainer div.cardReview {
+    flex-basis: 25%;
+    height: 100px;
+}
+
+/* article */
+.article {
+    background-color: rgb(111, 221, 20);
+    height:max-content;
+    padding: 30px;
+    padding-top: 70px;
+}
+.article h1 {
+    text-align: center;
+    padding: 20px;
+}
+.article .articleContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.article .articleContainer .cardArticle {
+    width: 250px;
+    padding: 10px;
+    margin-top: 30px;
+    flex-basis: 45%; 
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    border: thin solid rgb(65, 134, 9);
+    border-radius: 10px;
+}
+.article .articleContainer .cardArticle img {
+    height: 200px;
+    width: 400px;
+    object-fit: cover;
+}
+.article .articleContainer .cardArticle h1{
+    text-align: start;
+}
+.article .articleContainer .cardArticle p{
+    text-align:justify;
+    width: 400px;
+}
+
+/* profilll */
+.profil {
+    background-color: rgb(255, 197, 231);
+}
+.profil .cardFrofill {
+    padding: 40px;
+    width: 500px;
+    background-color: rgb(121, 255, 150);
+    border-color: cornflowerblue;
+}
+.profil .cardFrofill h1 {
+    text-align: center;
+}
+.profil .cardFrofill h3 {
+    text-align: center;
+}
+.profil .cardFrofill h4 {
+    padding-left: 30px;
+}
+.profil .cardFrofill img {
+    height: 170px;
+    padding-left: 35%;
+}
+
+/* footer */
+footer {
+    background-color: rgb(46, 226, 85);
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    header .logo-header{
+        width: 32%;
+    }
+
+    main div .beranda a{
+        bottom:  8%;
+    }
+
+    .about-container {
+        align-items: center;
+        width: 95%;
+        padding-left: 5%;
+        padding-top: 30px;
+        justify-content: space-between;
+    }
+    .about-container img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .about div #aboutText {
+        width: auto;
+    }
+
+    .review {
+        height: 500px;
+    }
+
+    .article .articleContainer .cardArticle img {
+        height: 100px;
+        width: 300px;
+    }
+
+    .article .articleContainer .cardArticle p{
+        width: 300px;
+    }
+
+    .profil .cardFrofill {
+        padding: 20px;
+        width: 300px;
+        background-color: rgb(121, 255, 150);
+        border-color: cornflowerblue;
+    }
+    .profil .cardFrofill h4 {
+        padding-left: 10px;
+    }
+    .profil .cardFrofill img {
+        height: 150px;
+        padding-left: 28%;
+    }
+}
+
+@media ( max-width : 360px){
+    .about {
+        padding-top: 10%;
+        height: 100vmax;
+    }
+    .about-container {
+        width: 95%;
+        padding-left: 5%;
+        padding-top: 30px;
+        flex-direction: column;
+    }
+    .about-container img {
+        height: 200px;
+        width: 215px;
+    }
+
+    .about div #aboutText {
+        width: auto;
+    }
+
+    .about .textKiri,
+    .about .textKanan {
+        padding:  0px;
+    }
+
+    .produk {
+        height: max-content;
+        padding: 30px 0 30px 0;
+    }
+    .produk div {
+        height: max-content;
+    }
+    .produk div div.produkList {
+        flex-direction: column;
+    }
+    
+    .produk div div.produkList .cproduk img{
+        max-height: 172px;
+        max-width: 172px;
+    }
+
+    .kerjasama {
+        padding: 10px;
+        height: 425px;
+    }
+
+    .review {
+        height: 750px;
+        justify-content:unset;
+        padding: 10px;
+    }
+    .review h1 {
+        padding-top: 20px;
+    }
+    .review .reviewContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 650px;
+    }
+    .review .reviewContainer div.cardReview {
+        flex-basis: 25%;
+        height: 300px;
+    }
+
+    .article {
+        padding: 40px 0 0 0;
+    }
+    .article h1 {
+        padding: 0px;
+    }
+    .article .articleContainer {
+        width: 100%;
+        align-content: center;
+        flex-direction: column;
+    }
+    .article .articleContainer .cardArticle {
+        width: 90%;
+        flex-basis: 45%; 
+    }
+    .article .articleContainer .cardArticle img {
+        height: 100px;
+        width: 90%;
+    }
+    .article .articleContainer .cardArticle h1{
+        text-align: start;
+    }
+    .article .articleContainer .cardArticle p{
+        width: 90%;
+    }
+
+    .profil .cardFrofill {
+        padding: 20px;
+        width: 100%;
+    }
+    .profil .cardFrofill h4 {
+        padding-left: 0px;
+        font-size: 12pt;
+    }
+    .profil .cardFrofill img {
+        height: 150px;
+        padding-left: 31%;
+    }
+
+}
