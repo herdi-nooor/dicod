@@ -3,11 +3,14 @@ window.addEventListener('scroll', function(){
     header.classList.toggle('sticky', window.scrollY > 0);
 })
 
-function toggleMenu(){
-    let menuToggle = document.querySelector('.toggle');
-    let menu = document.querySelector('.menu');
-    menuToggle.classList.toggle('active');
-    menu.classList.toggle('active');
-}
+const menuToggle = document.querySelector('.menu-togle input');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', function () { 
+    nav.classList.toggle('slide');
+});
+
+let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
 
 
