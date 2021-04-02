@@ -16,4 +16,3 @@ const toggleMenu = document.querySelectorAll('a.slideHide').forEach(item => {
         menuToggle.checked = false;
     })
 });
-
