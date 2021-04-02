@@ -4,13 +4,26 @@ window.addEventListener('scroll', function(){
 })
 
 const menuToggle = document.querySelector('.menu-togle input');
-const nav = document.querySelector('nav ul');
+let nav = document.querySelector('nav ul');
 
 menuToggle.addEventListener('click', function () { 
     nav.classList.toggle('slide');
 });
 
-let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+const toggleMenu = document.querySelectorAll('a.slideHide').forEach(item => {
+    item.addEventListener('click', event => {
+        nav.classList.toggle('slide');
+        menuToggle.checked = false;
+    })
+});
+
+// console.log(toggleMenu);
+
+// toggleMenu.addEventListener('click', event => { 
+//     console.log("klikk");
+// });
+
+// let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
 
 

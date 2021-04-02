@@ -11,15 +11,15 @@
 			<span class="logo-header">LAVA CABE</span>
 			<nav >
 				<ul>
-					<li><a href="#beranda" onclick="toggleMenu()"">BERANDA</a></li>
-					<li><a href="#produk" onclick="toggleMenu()"">PRODUK</a></li>
-					<li><a href="#articles">ARTIKEL</a></li>
-					<li><a href="#">KONTAK</a></li>
+					<li><a class="slideHide" href="#beranda" >BERANDA</a></li>
+					<li><a class="slideHide" href="#produk" >PRODUK</a></li>
+					<li><a class="slideHide" href="#articles">ARTIKEL</a></li>
+					<li><a class="slideHide" href="#">KONTAK</a></li>
 				</ul>
 			</nav>
 			<span  id="keranj" class="keranjang">KERANJANG</span>
 			<div class="menu-togle" id="navi">
-				<input type="checkbox">
+				<input type="checkbox" checked="false">
 				<span></span>
 				<span></span>
 				<span></span>
@@ -29,7 +29,7 @@
 			<div class="content">
 				<article class="beranda" id="beranda">
 					<h1>GAIRAHKAN SELERA MAKAN DENGAN BUMBU BERKUALITAS</h1>
-					<span id="arrow_down"></span>
+					<span id="arrow_down"><img src="aset/arrow.png" alt=""></span>
 					<a href="#about" onclick="toggleMenu()"></a>
 				</article>
 				<article class="about" id="about">
@@ -162,5 +162,5 @@
 			<p>created by hnoor</p>
 		</footer>
 	</body>
-	<script src="./main.js"></script>
+	<script src="main.js"></script>
 </html>
