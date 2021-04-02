@@ -17,13 +17,5 @@ const toggleMenu = document.querySelectorAll('a.slideHide').forEach(item => {
     })
 });
 
-// console.log(toggleMenu);
-
-// toggleMenu.addEventListener('click', event => { 
-//     console.log("klikk");
-// });
-
-// let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-
 
 
